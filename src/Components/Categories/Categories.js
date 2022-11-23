@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 const Categories = () => {
 
-    const { result: categories, isLoading, error, mutate } = useCategories();
+    const { result: categories, isLoading, error, mutate } = useCategories({includeContacts: true});
 
     const [isVisible, setIsVisible] = useState(true);
     const [page, setPage] = useState("");
@@ -49,11 +49,11 @@ const Categories = () => {
                     {categories.map(c => {
                         return <Row key={c.id} category={c} mutateFn={mutate} />
                     })}
+                    
             </div>
+            
+            
 
-            {/* <div>
-                <FetchGroupBy />
-            </div> */}
             
         </>
     );
