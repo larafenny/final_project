@@ -1,0 +1,38 @@
+.menu-tab-container{
+
+    padding-top: 120px;
+
+    .nav-item{
+        margin: 0 0rem;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+
+        
+        .nav-link{
+            color: white;
+        }
+        &:hover{
+            background-color: rgb(64 64 64);
+            color: black
+        }
+    }
+}
+
+// MEDIA QUERY
+
+@media (max-width: 641px) {
+    
+    
+}
+
+@media (min-width: 642px) {
+    .menu-tab-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-item{
+        margin: 0 1rem;
+        border-bottom: 1px solid white;
+    }
+    
+}

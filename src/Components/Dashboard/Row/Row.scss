@@ -1,0 +1,93 @@
+@media (min-width: 999px) {
+    span.icon {display:none}
+    span.text {display:inline-block}
+}
+
+@media (max-width: 999px) {
+    span.icon {display:inline-block}
+    span.text {display:none}
+}
+
+.single-contact{
+    background-color: rgb(46, 57, 58);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+
+
+    .contact-phone-info{
+        display: flex;
+
+        svg{
+            border-radius: 100%;
+            border: 1px solid green;
+            color: green !important;
+            padding: 0.5rem;
+            background-color: rgb(21, 56, 30);
+            transition: transform .2s;
+
+            &:hover{
+                background-color: rgb(46, 85, 56);
+                transform: scale(1.3);
+
+            }
+        }
+
+        .contact-info{
+            display: flex;
+        }
+    }
+
+    .contact-action{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+// MEDIA QUERY
+
+@media (max-width: 641px) {
+    .single-contact{
+        padding: 1rem 0.1rem;
+        margin: 1rem 0.2rem;
+
+    }
+
+    .contact-phone-info{
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .contact-info{
+            flex-direction: column;
+        }
+    }
+
+    
+}
+
+@media (min-width: 642px) {
+    .single-contact{
+        align-items: center;
+        padding: 1rem 1rem;
+        margin: 2rem 0;
+        &:hover{
+            background-color: rgba(158, 204, 247, 0.407);
+        }
+        
+        .contact-info{
+            align-items: center;
+            div{
+                margin: 0 0.2rem;
+            }
+        }
+
+
+    }
+}

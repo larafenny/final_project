@@ -1,0 +1,33 @@
+.category-header-container{
+    display: flex;
+}
+
+@media (max-width: 641px) {
+    .category-header-container{
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: rgb(64 64 64);
+        padding: 0 1rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+
+    }
+
+    
+}
+
+@media (min-width: 642px) {
+    .category-header-container{
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+}
+
+.category-list{
+    color: rgb(255, 255, 255);
+}
